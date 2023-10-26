@@ -4688,3 +4688,102 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/holle
 
 !ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-22 11:24:48.686
 !MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-10-23 18:33:51.228 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CO
+Framework arguments:  -keyring /Users/hollerller/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/hollerller/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-23 18:33:56.300
+!MESSAGE Log4j2 initialized with config file /Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-23 18:34:04.658
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-10-25 17:24:43.623 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CO
+Framework arguments:  -keyring /Users/hollerller/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/hollerller/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-25 17:24:48.967
+!MESSAGE Log4j2 initialized with config file /Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-25 17:24:58.181
+!MESSAGE Started RMI Server, listening on port 41337
+!SESSION 2023-10-26 07:03:57.856 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CO
+Framework arguments:  -keyring /Users/hollerller/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/hollerller/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-26 07:04:03.063
+!MESSAGE Log4j2 initialized with config file /Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-26 07:04:12.583
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:10:03.152
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 1 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:10:03.153
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:10:03.154
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 1 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:10:03.154
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:13:29.484
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 2 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:13:29.485
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:13:29.486
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 2 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:13:29.486
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:13:52.695
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:13:52.696
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:13:52.696
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 3 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:13:52.696
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:15:37.702
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 4 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:15:37.703
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:15:37.704
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 4 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:15:37.704
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:17:05.543
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:17:05.543
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:17:05.544
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 5 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2023-10-26 08:17:05.544
+!MESSAGE Existing sessions are:

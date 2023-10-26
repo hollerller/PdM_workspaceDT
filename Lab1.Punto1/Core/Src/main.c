@@ -100,12 +100,17 @@ int main(void)
 
     /* USER CODE BEGIN 3 */
 
-
-	  HAL_GPIO_TogglePin(EXT_LED_Y1_GPIO_Port, EXT_LED_Y1_Pin);
+	  HAL_GPIO_WritePin(EXT_LED_Y1_GPIO_Port, EXT_LED_Y1_Pin, GPIO_PIN_SET);
 	  HAL_Delay(200);
-	  HAL_GPIO_TogglePin(EXT_LED_B_GPIO_Port, EXT_LED_B_Pin);
+	  HAL_GPIO_WritePin(EXT_LED_Y1_GPIO_Port, EXT_LED_Y1_Pin, GPIO_PIN_RESET);
 	  HAL_Delay(200);
-	  HAL_GPIO_TogglePin(EXT_LED_Y2_GPIO_Port, EXT_LED_Y2_Pin);
+	  HAL_GPIO_WritePin(EXT_LED_B_GPIO_Port, EXT_LED_B_Pin, GPIO_PIN_SET);
+	  HAL_Delay(200);
+	  HAL_GPIO_WritePin(EXT_LED_B_GPIO_Port, EXT_LED_B_Pin, GPIO_PIN_RESET);
+	  HAL_Delay(200);
+	  HAL_GPIO_WritePin(EXT_LED_Y2_GPIO_Port, EXT_LED_Y2_Pin, GPIO_PIN_SET);
+	  HAL_Delay(200);
+	  HAL_GPIO_WritePin(EXT_LED_Y2_GPIO_Port, EXT_LED_Y2_Pin, GPIO_PIN_RESET);
 	  HAL_Delay(200);
 
     }
