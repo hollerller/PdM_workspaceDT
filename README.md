@@ -4,7 +4,7 @@ Repositorio para entrega de practicas de la materia Programación de Microcontro
 
 ## Autor
 
-- Nombre: David Tobausra
-- Ingeniero Electrónico
-- Tunja - Colombia 
+- David Tobausra
+  Ingeniero Electrónico
+  Tunja - Colombia 
 
