@@ -1,14 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="delayInit"/>
+		<item key="selection" value="count"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="count"/>
 			<item value="delayInit"/>
+			<item value="stm32f4"/>
+			<item value="HAL_Get"/>
+			<item value="hal"/>
+			<item value="tick_t"/>
+			<item value="start"/>
 			<item value="delayinit"/>
 			<item value="delay"/>
 			<item value="LED"/>
@@ -17,12 +23,6 @@
 			<item value="pinstate"/>
 			<item value="ext"/>
 			<item value="B1_USER_"/>
-			<item value="B1_USER_GPIO_Port"/>
-			<item value="PB"/>
-			<item value="GPIO_PinState buttonState = GPIO_PIN_RESET;&#x0A;    GPIO_PinState previousButtonState = GPIO_PIN_RESET;"/>
-			<item value="HAL_GPIO_Init"/>
-			<item value=" GPIO_InitStruct.Pin "/>
-			<item value="__HAL_RCC_GPIOA_CLK_ENABLE"/>
 		</list>
 		<list key="replacehistory">
 		</list>

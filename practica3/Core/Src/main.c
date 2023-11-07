@@ -65,13 +65,6 @@ static void MX_USART2_UART_Init(void);
 #define PERIOD_3 100
 #define DUTY_CYCLE 50
 
-const tick_t periodArray[] = {PERIOD_1, PERIOD_2, PERIOD_3};
-uint8_t sequenceLength = sizeof(periodArray) / sizeof(periodArray)[0];
-
-const uint8_t times = 5;
-uint8_t repeat = times * 2;
-
-
 /* USER CODE END 0 */
 
 /**
@@ -106,10 +99,9 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  	 delay_t myDelay;
-     tick_t initialDelay = periodArray[0] / 2;
-     delayInit(&myDelay, initialDelay);
-     uint8_t count = 0;
+  	 delay_t myDelay; 	// Create a variable type delay_t
+     tick_t initialDelay = PERIOD_2;   // Set the initial time of the delay (200ms)
+     delayInit(&myDelay, initialDelay); 	// Initialize the counter
 
   /* USER CODE END 2 */
 
@@ -118,21 +110,11 @@ int main(void)
   while (1)
   {
 
-	  tick_t delayTime = periodArray[count] /2;
-	  delayWrite(&myDelay, delayTime);
-
-	  if (delayRead(&myDelay)){
-          HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);
-          repeat--;
+	  if (delayRead(&myDelay)){   // Check if the delay finished
+          HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);	// When true toogle the led
 	  }
 
-	  if (repeat == 0){
-		  count++;
-	  }
-	  if (count == sequenceLength){
-		  count = 0;
-	  }
-	  repeat = times;
+
 
     /* USER CODE END WHILE */
 
