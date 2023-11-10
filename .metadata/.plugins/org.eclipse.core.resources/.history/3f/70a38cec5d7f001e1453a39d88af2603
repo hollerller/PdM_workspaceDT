@@ -1,0 +1,63 @@
+/*
+ * API_debounce.c
+ *
+ *  Created on: Nov 9, 2023
+ *      Author: hollerller
+ */
+
+#include "API_delay.h"
+#include "API_debounce.h"
+#include <stdio.h>
+#include "stm32f4xx_hal.h"
+
+
+void buttonPressed();			// debe encender el LED
+void buttonReleased();		// debe apagar el LED
+
+typedef enum{
+BUTTON_UP,
+BUTTON_FALLING,
+BUTTON_DOWN,
+BUTTON_RAISING,
+} debounceState_t;
+
+static debounceState_t debounceState;
+static bool_t buttonPressed;
+
+
+void debounceFSM_init() {
+	debounceState = BUTTON_UP;
+	buttonPressed = false;
+}
+
+
+void debounceFSM_update(){
+
+	switch (debounceState) {
+
+	case BUTTON_UP:
+
+
+
+		break;
+
+	case BUTTON_FALLING:
+
+		break;
+	case BUTTON_DOWN:
+
+		break;
+
+	case BUTTON_RAISING:
+
+
+		break;
+
+	default:
+		debounceState = BUTTON_UP;
+		buttonPressed = false;
+		break;
+
+	}
+
+}
