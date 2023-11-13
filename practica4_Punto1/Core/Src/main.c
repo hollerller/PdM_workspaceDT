@@ -65,19 +65,19 @@ BUTTON_UP,
 BUTTON_FALLING,
 BUTTON_DOWN,
 BUTTON_RAISING,
-} debounceState_t;		// Save the FMS states
+} debounceState_t;		// Define the possible FMS states
 
-	// Funcion definitions
+	// Function definitions
 
-void debounceFSM_init();	// Load the inicial state of the FMS
+void debounceFSM_init();	// Load the initial state of the FMS
 void debounceFSM_update();	// Updates the state of the FMS
-void buttonPressed();
-void buttonReleased();
+void buttonPressed();		// Function to execute when button is pressed
+void buttonReleased();		// Function to execute when button is released
 
 const uint8_t DEBOUNCETIME = 40; // Debounce delay constant
-delay_t debounceDelay;
-tick_t initialDelay = DEBOUNCETIME;
-debounceState_t debounceState;
+delay_t debounceDelay;			 // Create a variable type delay_t
+tick_t initialDelay = DEBOUNCETIME; // Set the initial time of the delay (40ms)
+debounceState_t debounceState;	// Variable of the FSM state
 
 
 /* USER CODE END 0 */
@@ -120,7 +120,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  debounceFSM_update();
+	  debounceFSM_update(); // Call the FMS continuously
+
     /* USER CODE END WHILE */
 
 
@@ -247,59 +248,56 @@ static void MX_GPIO_Init(void)
 
 /* USER CODE BEGIN 4 */
 
-void debounceFSM_init(){
-	debounceState = BUTTON_UP;
-	delayInit(&debounceDelay, initialDelay);
+void debounceFSM_init(){			// Initialize the FMS
+	debounceState = BUTTON_UP;		// Assume that the initial state of the button is UP
+	delayInit(&debounceDelay, initialDelay);	// Initialize the delay
 }
 
 void debounceFSM_update(){
 
-	uint8_t buttonState = HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin);
+	uint8_t buttonState = HAL_GPIO_ReadPin(B1_GPIO_Port, B1_Pin); // Read the button state (pressed or released)
 
-	//bool_t debounceFinished = delayRead(&debounceDelay);
 	switch (debounceState){
 
-	case BUTTON_UP:
+	case BUTTON_UP:		// State when button is released
 
-		if (!buttonState) {
-			debounceState = BUTTON_FALLING;
-			//delayWrite(&debounceDelay, 40);
-			delayInit(&debounceDelay, 40);
+		if (!buttonState) {	// Check if the button is pressed (the button state is 1 when button is up)
+			debounceState = BUTTON_FALLING;	// Next state for falling edge
+			delayInit(&debounceDelay, 40);	// Initialize the delay for debounce
 		}
 	break;
 
-	case BUTTON_FALLING:
+	case BUTTON_FALLING:	// State for falling edge
 
-		if (delayRead(&debounceDelay)){
-			if (!buttonState) {
-				debounceState = BUTTON_DOWN;
-				buttonPressed();
+		if (delayRead(&debounceDelay)){	// Check if the delay has finished
+			if (!buttonState) {			// If button is still pressed after debounce
+				debounceState = BUTTON_DOWN;	// Move to the button down state
+				buttonPressed();	// Execute button pressed functino
 			} else {
-				debounceState = BUTTON_UP;
+				debounceState = BUTTON_UP;	// Go back to the button up state
 			}
 		}
 
 		break;
 
-	case BUTTON_DOWN:
+	case BUTTON_DOWN:	// State when button is pressed
 
-		if (buttonState) {
-			debounceState = BUTTON_RAISING;
-			//delayWrite(&debounceDelay, 40);
-			delayInit(&debounceDelay, 40);
+		if (buttonState) {	// Check if the button is released
+			debounceState = BUTTON_RAISING;	//	Move to the next state for rising edge
+			delayInit(&debounceDelay, 40);	// Initialize the delay for debounce
 		}
 
 		break;
 
 
-	case BUTTON_RAISING:
+	case BUTTON_RAISING:	// State for the rising edge
 
-		if (delayRead(&debounceDelay)){
-			if (buttonState) {
-				debounceState = BUTTON_UP;
-				buttonReleased();
+		if (delayRead(&debounceDelay)){	// Check if the delay has finished
+			if (buttonState) {	// If button is still released after debounce
+				debounceState = BUTTON_UP;	// Move back to the button up state
+				buttonReleased();	// Execute the button release function
 			} else {
-				debounceState = BUTTON_DOWN;
+				debounceState = BUTTON_DOWN;	// Return to the button down state
 			}
 		}
 
@@ -315,12 +313,12 @@ void debounceFSM_update(){
 }
 
 void buttonPressed(){
-	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_SET);	// 	Turn the led on
 }
 
 
 void buttonReleased(){
-	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);
+	HAL_GPIO_WritePin(LD2_GPIO_Port, LD2_Pin, GPIO_PIN_RESET);	// Turn the led off
 }
 
 
