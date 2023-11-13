@@ -1,28 +1,28 @@
-21:17:39 **** Incremental Build of configuration Debug for project practica4_Punto1 ****
+22:51:18 **** Incremental Build of configuration Debug for project practica4_Punto2 ****
 make -j7 all 
-arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/practica4_Punto1/Core/Src" -I"/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/practica4_Punto1/Drivers/API/Inc" -I"/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/practica4_Punto1/Drivers/API/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
-arm-none-eabi-gcc -o "practica4_Punto1.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/practica4_Punto1/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="practica4_Punto1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: practica4_Punto1.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/practica4_Punto2/Core/Src" -I"/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/practica4_Punto2/Drivers/API/Inc" -I"/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/practica4_Punto2/Drivers/API/Src" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "practica4_Punto2.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/practica4_Punto2/STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="practica4_Punto2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: practica4_Punto2.elf
  
-arm-none-eabi-size   practica4_Punto1.elf 
-arm-none-eabi-objdump -h -S  practica4_Punto1.elf  > "practica4_Punto1.list"
-Finished building: practica4_Punto1.list
- 
+arm-none-eabi-size   practica4_Punto2.elf 
+arm-none-eabi-objdump -h -S  practica4_Punto2.elf  > "practica4_Punto2.list"
    text	   data	    bss	    dec	    hex	filename
-   8064	     20	   1652	   9736	   2608	practica4_Punto1.elf
+   8304	     20	   1652	   9976	   26f8	practica4_Punto2.elf
 Finished building: default.size.stdout
  
-21:17:49 **** Incremental Build of configuration Debug for project practica4_Punto1 ****
+Finished building: practica4_Punto2.list
+ 
+22:51:29 **** Incremental Build of configuration Debug for project practica4_Punto2 ****
 make -j7 all 
-arm-none-eabi-size   practica4_Punto1.elf 
+arm-none-eabi-size   practica4_Punto2.elf 
    text	   data	    bss	    dec	    hex	filename
-   8064	     20	   1652	   9736	   2608	practica4_Punto1.elf
+   8304	     20	   1652	   9976	   26f8	practica4_Punto2.elf
 Finished building: default.size.stdout
  
-21:17:57 **** Incremental Build of configuration Debug for project practica4_Punto1 ****
+22:51:42 **** Incremental Build of configuration Debug for project practica4_Punto2 ****
 make -j7 all 
-arm-none-eabi-size   practica4_Punto1.elf 
+arm-none-eabi-size   practica4_Punto2.elf 
    text	   data	    bss	    dec	    hex	filename
-   8064	     20	   1652	   9736	   2608	practica4_Punto1.elf
+   8304	     20	   1652	   9976	   26f8	practica4_Punto2.elf
 Finished building: default.size.stdout
  

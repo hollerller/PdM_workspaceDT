@@ -1,10 +1,10 @@
-# Practica 3
+# Practica 4 punto 2
 
-Implementar un módulo de software para trabajar con retardos no bloqueantes a partir de las funciones creadas en la práctica 2.
+Implementar un programa que cambie la frecuencia de parpadeo del LED entre 100 ms y 500 ms cada vez que se presione la tecla.  
 
 ## Descripción
 
-Led parpadea con el primer periodo, pendiente revisar para alternar los periodos.
+El programa debe usar las funciones anti-rebote del módulo API_debounce y los retardos no bloqueantes del módulo API_delay y la función readKey.
 
 ## Autor
 

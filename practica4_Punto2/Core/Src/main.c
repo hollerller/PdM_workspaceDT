@@ -61,10 +61,8 @@ static void MX_USART2_UART_Init(void);
 
 	// Constants definition
 
-#define PERIOD_1 1000
-#define PERIOD_2 200
-#define PERIOD_3 100
-#define DUTY_CYCLE 50
+#define PERIOD_1 100
+#define PERIOD_2 500
 
 /* USER CODE END 0 */
 
@@ -100,9 +98,10 @@ int main(void)
   MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  	 //delay_t myDelay; 	// Create a variable type delay_t
-     //tick_t initialDelay = PERIOD_2;   // Set the initial time of the delay (200ms)
-     //delayInit(&myDelay, initialDelay); 	// Initialize the counter
+  	 delay_t myDelay; 	// Create a variable type delay_t
+     tick_t initialDelay[2] = {PERIOD_1, PERIOD_2};   // Set an array of delay time
+     tick_t currentDelay = initialDelay[0];	// Set the initial delay
+     delayInit(&myDelay, currentDelay); 	// Initialize the delay
 
   /* USER CODE END 2 */
 
@@ -112,7 +111,25 @@ int main(void)
   {
 
 	  debounceFSM_update();
+
+	  if (readKey()){		// Check if key is pressed
+		  if(currentDelay == initialDelay[0]){	// Validates if the currentDelay is in position 0 (100)
+			  currentDelay = initialDelay[1];	// Change the array position to 1
+			  delayWrite(&myDelay, currentDelay);	// Update the delay time
+		  } else {
+			  currentDelay = initialDelay[0];	// Change the array position to 0
+			  delayWrite(&myDelay, currentDelay);	// Update the delay time
+		  }
+
+	}
+
+		if (delayRead(&myDelay)) {   // Check if the delay finished
+			HAL_GPIO_TogglePin(LD2_GPIO_Port, LD2_Pin);	// When true toogle the led
+		}
+
     /* USER CODE END WHILE */
+
+
 
 
     /* USER CODE BEGIN 3 */

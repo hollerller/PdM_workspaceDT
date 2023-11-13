@@ -5519,3 +5519,16 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/holle
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-11-12 21:05:23.930
 !MESSAGE Indexed 'practica4_Punto1' (43 sources, 144 headers) in 2.85 sec: 11,582 declarations; 52,065 references; 10 unresolved inclusions; 89 syntax errors; 1,020 unresolved names (1.6%)
+!SESSION 2023-11-12 23:01:37.486 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_CO
+Framework arguments:  -keyring /Users/hollerller/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/hollerller/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-11-12 23:01:42.360
+!MESSAGE Log4j2 initialized with config file /Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT/.metadata/.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-11-12 23:01:52.493
+!MESSAGE Started RMI Server, listening on port 41337

@@ -1,4 +1,4 @@
-# Practica 3
+# Practica 4 punto 1
 
 Implementar una MEF anti-rebote que permita leer el estado del pulsador de la placa NUCLEO-F4 y generar acciones o eventos ante un flanco descendente o ascendente
 
