@@ -8,8 +8,8 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="delayInit"/>
 			<item value="init"/>
+			<item value="delayInit"/>
 			<item value="static"/>
 			<item value="delayWrite"/>
 			<item value="count"/>
