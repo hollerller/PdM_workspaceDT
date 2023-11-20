@@ -8,6 +8,9 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="i2c"/>
+			<item value="uart"/>
+			<item value="hal"/>
 			<item value="get"/>
 			<item value="currentState"/>
 			<item value="buttonPressed"/>
@@ -20,9 +23,6 @@
 			<item value="delayWrite"/>
 			<item value="count"/>
 			<item value="stm32f4"/>
-			<item value="hal"/>
-			<item value="tick_t"/>
-			<item value="start"/>
 		</list>
 		<list key="replacehistory">
 			<item value="debounceState"/>

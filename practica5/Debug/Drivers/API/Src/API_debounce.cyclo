@@ -1,0 +1,5 @@
+../Drivers/API/Src/API_debounce.c:34:6:debounceFSM_init	1
+../Drivers/API/Src/API_debounce.c:41:6:debounceFSM_update	11
+../Drivers/API/Src/API_debounce.c:101:6:buttonPressed	1
+../Drivers/API/Src/API_debounce.c:110:6:buttonReleased	1
+../Drivers/API/Src/API_debounce.c:116:8:readKey	2

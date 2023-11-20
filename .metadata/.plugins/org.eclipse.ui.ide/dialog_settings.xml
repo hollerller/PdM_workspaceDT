@@ -17,6 +17,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/Users/hollerller/Documents/UBA/CESE/PdM/revpract4/ej4_debounce"/>
 			<item value="/Users/hollerller/Documents/UBA/CESE/PdM/revpract3/Practica3Fortes"/>
 			<item value="/Users/hollerller/Documents/UBA/CESE/PdM/revpract2/PdM_workspace"/>
 			<item value="/Users/hollerller/Documents/UBA/CESE/PdM/PdM_workspaceDT"/>

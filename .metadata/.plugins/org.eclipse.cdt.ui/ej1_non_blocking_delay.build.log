@@ -1,0 +1,10 @@
+20:03:46 **** Incremental Build of configuration Debug for project ej1_non_blocking_delay ****
+make -j7 all 
+arm-none-eabi-size   ej1_non_blocking_delay.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13232	     24	   3504	  16760	   4178	ej1_non_blocking_delay.elf
+Finished building: default.size.stdout
+ 
+
+20:03:46 Build Finished. 0 errors, 0 warnings. (took 212ms)
+
