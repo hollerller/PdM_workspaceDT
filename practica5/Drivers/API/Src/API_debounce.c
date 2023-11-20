@@ -103,14 +103,14 @@ void buttonPressed(){
 	uint8_t edgeMessage[] = "Button pressed\r\n";
 
 	edgeDetected = true; // An edge was detected
-	uartSendString(edgeMessage);
+	uartSendString(edgeMessage); // If button pressed (Falling Edge) send message
 }
 
 
 void buttonReleased(){
 	uint8_t edgeMessage[] = "Button released\r\n";
 
-	uartSendString(edgeMessage);
+	uartSendString(edgeMessage);  // If button released (Rising Edge) send message
 }
 
 bool_t readKey(){
